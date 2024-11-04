@@ -17,7 +17,7 @@
             padding: 20px;
             border: 2px solid black;
             border-radius: 10px;
-            background-color: rgb(225, 212, 212);
+            background: linear-gradient(115deg, #8cc123, #113211);
             margin-top: 40px;
         }
         button {
@@ -28,17 +28,18 @@
         }
         .redmessageshow {
             margin-top: 10px;
-            color: red;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Counter: <span id="counterr">0</span></h1>
+        <h1 style="color: white ;">Counter: <span id="counterr">0</span></h1>
         <button onclick="incrementCounter()">Increment</button>
         <button onclick="decrementCounter()">Decrement</button>
         <button onclick="resetCounter()">Reset</button>
-        <p id="redmessageshow" class="redmessageshow" style="display: none;">Your count is zero now.</p>
+        <p id="redmessageshow" class="redmessageshow">Your count is zero now.</p>
     </div>
    
     <!-- JS Script Link. -->

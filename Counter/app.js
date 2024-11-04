@@ -1,3 +1,7 @@
+
+
+
+
 let counter = 0;
 let texxt = document.getElementById('counterr');
 let message = document.getElementById('redmessageshow');

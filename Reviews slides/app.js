@@ -8,15 +8,47 @@ var reviews = [
 ];
 
 
-const colorss = [
-    '#3357FF', '#0C065A', '#FF5733', '#33FF57', '#F0F5F8', '#F0E68C', 
-    '#FF33A8', '#33FFD8', '#A033FF', '#FF8333', '#33FF8C'
+
+
+const gradients = [
+    'linear-gradient(90deg, #3357FF, #0C065A)', 
+    'linear-gradient(90deg, #FF5733, #33FF57)', 
+    'linear-gradient(90deg, #F0F5F8, #F0E68C)', 
+    'linear-gradient(90deg, #FF33A8, #33FFD8)', 
+    'linear-gradient(90deg, #A033FF, #FF8333)', 
+    'linear-gradient(90deg, #33FF8C, #FFD700)', 
+    'linear-gradient(90deg, #FF4500, #FFD700)', 
+    'linear-gradient(90deg, #8A2BE2, #7FFF00)', 
+    'linear-gradient(90deg, #00CED1, #FF69B4)', 
+    'linear-gradient(90deg, #FF1493, #00BFFF)', 
+    'linear-gradient(90deg, #FF6347, #3CB371)', 
+    'linear-gradient(90deg, #6A5ACD, #FF8C00)'
 ];
 
+// const gradientss = [
+//     'linear-gradient(90deg, #FFB6C1, #FF69B4)',
+//     'linear-gradient(90deg, #B2E0E6, #6DD5ED)', 
+//     'linear-gradient(90deg, #FFFACD, #FFEFD5)', 
+//     'linear-gradient(90deg, #FFDEE9, #B5FFFC)', 
+//     'linear-gradient(90deg, #FFF8E1, #FFABAB)', 
+//     'linear-gradient(90deg, #FFCCBC, #D1C4E9)', 
+//     'linear-gradient(90deg, #E1BEE7, #D1C4E9)', 
+//     'linear-gradient(90deg, #B2EBF2, #80DEEA)', 
+//     'linear-gradient(90deg, #FFEB3B, #FF9800)', 
+//     'linear-gradient(90deg, #E3F2FD, #BBDEFB)'  
+// ]
+
 function changeColors() {
-    let randommColor = colorss[Math.floor(Math.random() * colorss.length)];
-    document.body.style.backgroundColor = randommColor;
+    let randomGradient = gradients[Math.floor(Math.random() * gradients.length)];
+    document.body.style.background = randomGradient;
 }
+
+// function changeColorButton() {
+//     let randomGradientt = gradientss[Math.floor(Math.random() * gradientss.length)];
+//     document.querySelector('.slider').style.background = randomGradientt; // Change this line
+// }
+
+
 
 
 
@@ -36,6 +68,7 @@ function nextReview() {
     if (currentIndex >= reviews.length) currentIndex = 0;
     updateReview();
     changeColors();
+    // changeColorButton()
 }
 
 function prevReview() {
@@ -43,6 +76,7 @@ function prevReview() {
     if (currentIndex < 0) currentIndex = reviews.length - 1;
     updateReview();
     changeColors();
+    // changeColorButton()
 }
 
 updateReview();
