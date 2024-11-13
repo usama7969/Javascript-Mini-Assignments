@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roll Dice Game</title>
+    <!-- Css Link. -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- font family link. -->
+    <link href="https://fonts.cdnfonts.com/css/games" rel="stylesheet">
+                
+  </head>
+  <body>
+  
+
+    <div class="top">
+      <button onclick="restartt();">Restart</button>
+      <h1>Roll Dice Game</h1>
+    </div>
+
+<div class="players">
+
+<div class="player1">
+<p style="color: yellow; font-size: 25px; border: none;" class="namee1"></p>
+<p>Hold Score</p>
+<h2 class="holdScore1">0</h2>
+<p>Current Score</p>
+<h2 class="score1">0</h2>
+</div>
+
+
+<div class="player2">
+  <p style="color: yellow; font-size: 25px; border: none;" class="namee2">Muhammad Usama</p> 
+  <p>Hold Score</p>
+  <h2 class="holdScore2">0</h2>
+  <p>Current Score</p>
+  <h2 class="score2">0</h2>
+</div>
+
+</div>
+
+<div class="footer">
+  <button onclick="rollDice()">Roll Dice</button>
+  <img src="./images/6.PNG" alt="">
+  <button onclick="hold()">Hold</button>
+</div>
+<br>
+
+
+
+
+<!-- Result... -->
+<div class="resultt" id="resultDisplay">
+  Congratulations You Win
+</div>
+
+
+  
+
+
+
+
+    <script src="app.js"></script>
+  </body>
+</html>

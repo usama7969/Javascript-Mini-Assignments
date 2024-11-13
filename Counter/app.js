@@ -23,14 +23,15 @@ function changeColors() {
 }
 
 
-
 function showRedTexxt(){
  if (counter === 0) {
         message.style.display = 'block';
     } 
-    else {
+    else{
         message.style.display = 'none'; 
     }
+
+    
 }
 
 function incrementCounter() {

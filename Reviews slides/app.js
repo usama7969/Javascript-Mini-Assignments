@@ -25,28 +25,14 @@ const gradients = [
     'linear-gradient(90deg, #6A5ACD, #FF8C00)'
 ];
 
-// const gradientss = [
-//     'linear-gradient(90deg, #FFB6C1, #FF69B4)',
-//     'linear-gradient(90deg, #B2E0E6, #6DD5ED)', 
-//     'linear-gradient(90deg, #FFFACD, #FFEFD5)', 
-//     'linear-gradient(90deg, #FFDEE9, #B5FFFC)', 
-//     'linear-gradient(90deg, #FFF8E1, #FFABAB)', 
-//     'linear-gradient(90deg, #FFCCBC, #D1C4E9)', 
-//     'linear-gradient(90deg, #E1BEE7, #D1C4E9)', 
-//     'linear-gradient(90deg, #B2EBF2, #80DEEA)', 
-//     'linear-gradient(90deg, #FFEB3B, #FF9800)', 
-//     'linear-gradient(90deg, #E3F2FD, #BBDEFB)'  
-// ]
+
 
 function changeColors() {
     let randomGradient = gradients[Math.floor(Math.random() * gradients.length)];
     document.body.style.background = randomGradient;
 }
 
-// function changeColorButton() {
-//     let randomGradientt = gradientss[Math.floor(Math.random() * gradientss.length)];
-//     document.querySelector('.slider').style.background = randomGradientt; // Change this line
-// }
+
 
 
 
@@ -68,7 +54,7 @@ function nextReview() {
     if (currentIndex >= reviews.length) currentIndex = 0;
     updateReview();
     changeColors();
-    // changeColorButton()
+    
 }
 
 function prevReview() {
@@ -76,7 +62,7 @@ function prevReview() {
     if (currentIndex < 0) currentIndex = reviews.length - 1;
     updateReview();
     changeColors();
-    // changeColorButton()
+   
 }
 
 updateReview();
