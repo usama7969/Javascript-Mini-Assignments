@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Share Tech", sans-serif;
+    font-weight: bold;
+}
+
+
+:root {
+    --blue: #179690;
+    --silver: #707070;
+    --yellow: #FFAA00;
+    --lightyellow: #F1D9A7;
+  }
+
+body{
+    background-color: var(--yellow);
+    text-align: center;
+}
+
+.btnn{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.startt{
+    color: white;
+    font-size: 50px;
+    padding: 0px 90px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: var(--blue);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.startt:hover{
+    scale: 1.1;
+}
+
+
+p{
+    font-size: 50px;
+    color: var(--blue);
+    text-align: center;
+    text-shadow: 5px 4px 2px rgba(0, 0, 0, 0.6);    
+}
+
+
+.divv2{
+    display: flex;
+    justify-content: space-between;
+    max-width: 70vw;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 90px;
+}
+i, .que{
+    color: var(--blue);
+    text-shadow: 9px 7px 7px rgba(0, 0, 0, 0.6);
+}
+
+.whi{
+    text-shadow: 2px 2px 0px white, -2px -2px 0px white, 2px -2px 0px white, -2px 2px 0px white;
+    color: var(--silver);
+}
+
+.divv3{
+    justify-content: center;
+    font-size: 90px;
+    margin: 0px 12px;
+    margin-top: 20px;
+    padding: 0px 50px;
+    background-color: var(--blue);
+    border-radius: 20px;
+    border: none;
+    border-bottom: 10px solid white;
+    color: white;
+    cursor: pointer;
+}
+.divv3:hover{
+    scale: 1.1;
+    transition:0.6s;
+}
+
+.divv4{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 110px;
+}
+
+.numm{
+    color: var(--blue);
+    text-shadow: 2px 2px 0px white, -2px -2px 0px white, 2px -2px 0px white, -2px 2px 0px white;
+    padding: 0px 10px;
+    background-color: var(--lightyellow);
+    margin: 5px;
+    border-bottom: 10px solid white;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+.numm:hover{
+    scale: 1.1;
+    transition:0.6s;
+    cursor: pointer;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+
+
+
+/* media query.. */
+@media only screen and (max-width: 768px) {
+
+    .divv2{
+       font-size: 30px;
+    }
+    .divv3{
+        font-size: 50px;
+    }
+    .divv4{
+        font-size: 40px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    p{
+        margin-top: 30px;
+    }
+}
